@@ -1,0 +1,20 @@
+<div id="id02" class="modal">
+    <div class="bootstrap-iso">
+        <div class="container-fluid">             
+            <form class="modal-content animate" name="formelister" id="formlister" action="/Labo01BD/Serveur/membres/ConnexionMembres.php" method="POST">
+                <div class="imgcontainer">  
+                    <div class="container">
+                        <label for="email"><b>Courriel</b></label>
+                        <input type="text" placeholder="Courriel" name="logemail" id="logemail" required>                
+                        <label for="pass"><b>Mot de Passe</b></label>
+                        <input type="password" placeholder="Mot de Passe" name="pass" id="pass" required>                        
+                        <button id="login" name="login" type="submit">Connexion</button>                        
+                    </div>    
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" name="formEnreg" id="formEnreg" action="/Labo01/Serveur/membres/EnregistrementMembres.php" method="POST">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+      <div class="container">
+        <label for="email"><b>Courriel</b></label>
+        <input type="email" placeholder="Courriel" name="email" required>
+        <label for="first_name"><b>Prenom</b></label>
+        <input type="text" placeholder="Prenom" name="first_name" id="first_name" required>
+        <label for="last_name"><b>Nom</b></label>
+        <input type="text" placeholder="Nom" name="last_name" id="last_name" required>
+        <div class="bootstrap-iso">
+          <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+               <div class="form-group">
+                 <label class="control-label" for="birthday">Date de Naissance</label>
+                 <input class="form-control" id="birthday" name="birthday" placeholder="DD/MM/YYY" type="text" required/>
+               </div>
+             </div>
+           </div>    
+          </div>
+         </div>
+        <div class="col-2">
+          <div class="input-group">
+              <label class="label">Sexe</label>
+              <div class="p-t-10">
+                  <label class="radio-container m-r-45">Homme
+                      <input type="radio" checked="checked" name="gender" id="male" value="male">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container">Femme
+                      <input type="radio" name="gender" id="female" value="female">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+          </div>
+      </div>
+        <label for="password"><b>Mot de Passe</b></label>
+        <input type="password" placeholder="Mot de Passe"  name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-_]).{8,}" maxlength="10" title="Doit Contenir 8 a 10 caractere, une majuscule,une minuscule et - ou _" required>
+        <label for="passwordconfirmation"><b>Confirmer Mot de Passe</b></label>
+        <input type="password" placeholder="Mot de Passe" value="" name="passwordconfirmation" id="passwordconfirmation" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-_]).{8,}" maxlength="10" title="Doit Contenir 8 a 10 caractere, une majuscule,une minuscule et - ou _" required>
+        <div class="p-t-10" id="con">
+          <input  class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+          <label class="form-check-label" for="flexCheckDefault">
+            Accepte la Politique de Confidentialite
+              </label>  
+              
+        
+          
+      </div>
+          
+      <button id="inscrire" name="inscrire"class="btn btn--radius-2 btn--blue" type="submit" onclick="validatePassword();">Submit</button>
+        
+      </div>
+      
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        
+      </div>
+    </form>
+  </div>

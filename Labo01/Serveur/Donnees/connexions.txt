@@ -1,0 +1,8 @@
+admin@moviepass.com;Admin123_;A;a
+Cap@gmail.com;Caple123_;A;m
+Vetement@gmail.com;Neige123_;I;m
+123@gmail.com;Allo123_;A;m
+A@a;Neige123_;A;m
+3@3;Neige123_;A;m
+dquangloc06@gmail.com;Neige123_;A;m
+admin@admin.com;admin;A;A
